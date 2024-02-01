@@ -56,21 +56,21 @@ To install the necessary dependencies, activate your environment and run the fol
 
 ```bash
 pip install -r requirements.txt
-
+```
 ## Run Experiments
 
 To execute the experiments, run the following command:
 ```bash
 python src/run.py
-
+```
 ## Analyze Results
 
 After running experiments, you can analyze the results with:
 ```bash
 python src/scripts/analyze_results.py
-
+```
 To validate setup and functionality, run:
 ```bash
 python -m unittest discover tests
-
+```
 
