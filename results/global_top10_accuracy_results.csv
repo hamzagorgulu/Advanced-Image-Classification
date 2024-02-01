@@ -1,0 +1,11 @@
+Model,Epochs,NumConvLayers,Optimizer,LR,Step,WeightDecay,TrainAcc,TestAcc
+FlexibleResNet,100,4,Adam,0.0001,15,0.3,95.444,92.44
+FlexibleResNet,100,3,Adam,0.0001,15,0.3,95.374,92.15
+FlexibleResNet,100,2,Adam,0.001,15,0.3,91.842,90.56
+FlexibleResNet,100,2,Adam,0.0001,15,0.3,93.932,90.53
+FlexibleResNet,30,4,Adam,0.0001,15,0.3,90.466,89.94
+FlexibleResNet,100,5,Adam,0.001,15,0.3,93.91,89.77
+FlexibleResNet,100,3,Adam,0.001,15,0.3,92.732,89.77
+FlexibleResNet,100,5,Adam,0.0001,15,0.3,92.562,89.56
+FlexibleConvLayer,30,9,AdamW,0.001,15,0.3,91.99,86.78
+FlexibleConvLayer,30,9,Adam,0.001,15,0,91.802,86.65

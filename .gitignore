@@ -1,0 +1,8 @@
+cifar-10-batches-py
+cifar-100-python-
+data
+venv
+checkpoints
+notes.txt
+.ipynb_checkpoints/
+

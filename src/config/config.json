@@ -1,0 +1,29 @@
+{
+    
+    "general_config": {
+        "initial_filters": 32,
+        "fc_layer_sizes": [1024, 512, 128],
+        "num_classes": 10,
+        "alpha": 0.01,
+        "epoch_size": 2,
+        "batch_size": 1024,
+        "use_amp": false,
+        "device": "cuda",  
+        "checkpoint_save_threshold": 0.80,
+        "criterion": "CrossEntropyLoss",
+	"lr_scheduler": "StepLR"
+    },
+    "grid_search_config": {
+        "models": ["FlexibleConvLayer", "FlexibleResNet"],
+        "learning_rates": [0.001, 0.0001, 0.00001],
+        "step_sizes": [5, 15],
+        "optimizers": [
+            ["Adam", {"weight_decay": 0}],
+	    ["Adam", {"weight_decay": 0.3}],
+	    ["AdamW", {"weight_decay": 0}],
+	    ["AdamW", {"weight_decay": 0.3}],
+	    ["SGD", {"momentum": 0.9}]
+        ],
+        "num_conv_layers": [5, 7, 9, 13]
+    }
+}
